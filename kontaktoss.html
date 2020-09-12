@@ -21,7 +21,7 @@ function closeForm() {
 <!--Menu bar-->
     <header>
 	    <ul>
-		<img src="chabologo.jpg" alt="Logo" style="height:70px; width: 80px; margin-top: 10px; margin-bottom: -20px; margin-left: 10px;">
+		<li><img src="chabologo.jpg" alt="Logo" style="height:70px; width: 80px; margin-top: 10px; margin-bottom: -20px; margin-left: 10px;"></li>
         <li><a href="index.html">Hjem</a></li>
         <li><a href="#">Om oss &#9662;</a>
       		<ul class="dropdown">
@@ -40,13 +40,13 @@ function closeForm() {
 		<li><a href="#">FAQ</a></li>
         <li><a href="#">Kontakt oss</a></li>
 		
-      	<div class="login-container">
+      	<li><div class="login-container">
     <form action="/action_page.php">
       <input type="text" placeholder="Username" name="username">
       <input type="text" placeholder="Password" name="psw">
       <button type="submit">Login</button>
     </form>
-  </div>
+		</div></li>
     </ul>
 	</header>
     <p></p>
@@ -140,7 +140,7 @@ function closeForm() {
   <form action="/action_page.php" class="form-container">
     <h1>Chat</h1>
     <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+    <textarea placeholder="Type message.." name="msg" id="msg" required></textarea>
     <button type="submit" class="btn">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
