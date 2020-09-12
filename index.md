@@ -16,6 +16,7 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }</script>
 </head>
+
 <body>
 <!--Menu bar-->
     <header><ul>
@@ -52,10 +53,8 @@ function closeForm() {
   <div class="column side">
   </div>
   <div class="column middle" style="position: relative; background-size: contain;">
-    
-	<div class="video">
+    <div class="video">
 	<video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="https://evoy.no/wp-content/uploads/2020/06/Evoy-Loop2_compressed.mp4" style="max-width: 100%; max-height: 90%; overflow: hidden;">
-	
 	</video>
 	<div style="position: absolute; top: 200px; left: 20px; color:#fff; font-family: Trebuchet MS; text-shadow: 2px 2px #000000;">
 		<h1 stryle="position: relative;">IT'S TIME TO GO ELECTRIC</h1>
@@ -98,32 +97,23 @@ function closeForm() {
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-    
   </div>
   <div class="column side">
   </div>
 </div>
-
 <!--Footer-->
 <footer class="footer-distributed">
-
 			<div class="footer-left">
           <img src="Chabologo.jpg">
 				<h3>ChaboNorway<span>AS</span></h3>
-
 				<p class="footer-links">
 					<a href="#">Hjem</a>
-					|
 					<a href="#">Om oss</a>
-					|
 					<a href="#">Service</a>
-					|
 					<a href="#">Kontakt oss</a>
 				</p>
-
 				<p class="footer-company-name">© 2019 ChaboNorway AS el-motor solutions Pvt. Ltd.</p>
 			</div>
-
 			<div class="footer-center">
 				<div>
 					<i class="fa fa-map-marker"></i>
@@ -131,7 +121,6 @@ function closeForm() {
 						 Agnes Mowinckels gate No.A1, Sector - 1</span>
 						Norge, Bergen - 5054</p>
 				</div>
-
 				<div>
 					<i class="fa fa-phone"></i>
 					<p>+4747000000</p>
@@ -154,17 +143,13 @@ function closeForm() {
 				</div>
 			</div>
 		</footer>
-
 <!--Chatbot-->
 	<button class="open-button" onclick="openForm()">Chat med oss</button>
-
 <div class="chat-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
     <h1>Chat</h1>
-
     <label for="msg"><b>Message</b></label>
     <textarea placeholder="Type message.." name="msg" required></textarea>
-
     <button type="submit" class="btn">Send</button>
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
@@ -173,11 +158,9 @@ function closeForm() {
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
-
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
-
 </script>
 </body>
 </html>
