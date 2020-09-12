@@ -29,7 +29,7 @@ function closeForm() {
 			  <li><a href="#">Nyheter</a></li>
 			  <li><a href="#">Eventer</a></li>
       		</ul>
-		<li><a href="kart.html">Ladested</a></li>
+		<li><a href="#">Ladested</a></li>
         <li><a href="#">Produkter &#9662;</a>
             <ul class="dropdown1">
                 <li><a href="#">Medlemskap</a></li>
@@ -62,18 +62,38 @@ function closeForm() {
                         zoom: 6,
                         center:{lat: 61.694310, lng: 6.651753}
                       }
-                      var map = new google.maps.Map(document.getElementById("kart"), settings);                          
+                      var map = new
+                      google.maps.Map(document.getElementById("kart"), settings);                          
                       /*ladestason på kart funksjon*/
-                      function addMarker(kordinater){
-                        var ladestasjon = new google.maps.Marker({
-                          position:kordinater,
-                          map:kart
+                        var aker = new google.maps.Marker({
+                          position:{lat: 59.910556, lng: 10.729679},
+                          map:map,
                         });
-                        addMarker({lat: 61.694310, lng: 6.651753});
-                      }
+                        var infoAker = new google.maps.InfoWindow({
+                          content:'<h1><a href="aker.html">Aker Brygge</a></h1>'
+                        });
+                        aker.addListener('click', function(){
+                          infoAker.open(map,aker);
+                        });
+
+                        var bergen = new google.maps.Marker({
+                          position:{lat: 60.395569, lng: 5.325300},
+                          map:map,
+                        });
+                        var infoBryggen = new google.maps.InfoWindow({
+                          content:'<h1><a href="bergen.html">Bryggen i Bergen</a></h1>'
+                        });
+                        bergen.addListener('click', function(){
+                          infoBryggen.open(map,bergen);
+                        });
                     }
                 </script>
                 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYMt83mC2ADyWbn_TBWycb6kmNuJV2t6s&callback=initMap" type="text/javascript"></script>
+              <h1>Ladestasjoner:</h1>
+                <h2><a href="bergen.html">Bryggen i Bergen</a></h2>
+                <p>Ladestasjonen vår på Bryggen i Bergen.</p>
+                <h2><a href="aker.html">Aker Brygge</a></h2>
+                <p>Ladestasjonen vår på Aker Brygge i Oslo.</p>
   </div>
   <div class="column side">
   </div>
