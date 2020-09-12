@@ -1,8 +1,5 @@
 <style>
-#kart{
-      height: 800px;
-      width: 100%;
-    }
+
   	html{
     }
   	body{
@@ -13,6 +10,10 @@
   -o-background-size: cover;
 	  background-size: cover;
 	  
+    }
+	#kart{
+      height: 800px;
+      width: 100%;
     }
     ul{
 		margin-top: 0px;
