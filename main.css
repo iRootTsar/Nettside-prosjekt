@@ -350,10 +350,10 @@ footer{
 .footer-distributed .footer-icons{
 	margin-top: 25px;
 }
-.column-middle .footer-icons1{
+.column.middle .footer-icons1{
 	margin-top: 25px;
 }
-.column-middle .footer-icons1 a{
+.column.middle .footer-icons1 a{
 	display: inline-block;
 	width: 35px;
 	height: 35px;
