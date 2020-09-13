@@ -350,7 +350,25 @@ footer{
 .footer-distributed .footer-icons{
 	margin-top: 25px;
 }
+.footer-icons1{
+	margin-top: 25px;
+}
+.footer-icons1 a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
 .footer-distributed .footer-icons a{
 	display: inline-block;
 	width: 35px;
