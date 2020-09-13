@@ -212,12 +212,11 @@
 
 footer{
 	position: sticky;
-	bottom: 0;
 	
 }
 
 @media (max-height:800px){
-	footer { position: relative; }
+	footer { position: sticky; }
 	header { padding-top:40px; }
 }
 
