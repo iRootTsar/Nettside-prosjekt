@@ -3,23 +3,19 @@
 }
     body{
       margin: 0;
+	    
 	  background: url(wallpaper.jpg) no-repeat center center fixed;
 	   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 	  background-size: cover;
     }
-header{
-	position: fixed;
-	margin: 0;
-	top: 0;
-}
     #kart{
       height: 600px;
       width: 100%;
     }
     ul{
-		margin-top: 0;
+	margin-top: 0;
         padding: 0;
         list-style: none;
         background: #0c3c60;
