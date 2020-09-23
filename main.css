@@ -10,8 +10,10 @@
 	   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-	  background-size: cover;
-	  
+	  background-size: cover; 
+	  heade {
+		  margin-top: 0;
+	    }
     }
     #kart{
       height: 600px;
