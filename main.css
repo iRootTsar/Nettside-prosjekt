@@ -12,6 +12,7 @@
     }
 header{
 	position: fixed;
+	padding-top: 0px;
 }
     #kart{
       height: 600px;
