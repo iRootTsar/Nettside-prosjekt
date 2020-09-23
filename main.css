@@ -10,6 +10,9 @@
   -o-background-size: cover;
 	  background-size: cover;
     }
+header{
+	position: fixed;
+}
     #kart{
       height: 600px;
       width: 100%;
