@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>El-Fly Simulator</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+<script>function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}</script>
+</head>
+
+<body>
+<!--Menu bar-->
+    <header>
+	    <ul>
+		<li><img src="chabologo.jpg" alt="Logo" style="height:70px; width: 80px; margin-top: 10px; margin-bottom: -20px; margin-left: 10px;"></li>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="#">Om oss &#9662;</a>
+      		<ul class="dropdown">
+              <li><a href="#">Visjon</a></li>
+			  <li><a href="#">Nyheter</a></li>
+			  <li><a href="#">Eventer</a></li>
+      		</ul>
+		<li><a href="kart.html">Ladested</a></li>
+        <li><a href="#">Produkter &#9662;</a>
+            <ul class="dropdown1">
+                <li><a href="#">Medlemskap</a></li>
+                <li><a href="#">Batteri</a></li>
+                <li><a href="#">Priser</a></li>
+            </ul>
+        </li>
+		<li><a href="#">FAQ</a></li>
+        <li><a href="#">Kontakt oss</a></li>
+		
+      	<li style="text-align: right; float: right;"><div class="login-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit">Login</button>
+    </form>
+		</div></li>
+    </ul>
+	</header>
+    <p></p>
+	<div class="row">
+  <div class="column side">
+  </div>
+  <div class="column middle" style="position: relative; background-size: contain;">
+    <h1 style="text-align: center;">Prototype på Simulator for El-Fly</h1>
+	<img src="FlySim1.png" alt="flysim" style="width: 48%; float: left; margin: 5px; padding: 5px;">
+	<p style="font-size: larger;margin-top: 15%;margin-bottom: 10%; padding: 2%; text-align: center;">
+		Vår flysimulator er utviklet ved hjelp av Delta Ingeinør Firma som også kodet dette nettstedet.
+		Simulatoren har instrumenter som viser hastighet, høyde, koordinater og resterende batteri.
+		På bildene kan du se diverse landskap tatt fra flysimulatoren.
+</p>
+	
+    <img src="FlySim2.png" alt="flysim" style="width: 48%;	margin: 1%; padding: 5px; float: right;">
+    <img src="FlySim3.png" alt="flysim" style="width: 48%;	margin: 1%; padding: 5px; float: left;">
+ </div>
+  <div class="column side">
+  </div>
+</div>
+<!--Footer-->
+<footer class="footer-distributed">
+			<div class="footer-left">
+          <img src="chabologo.jpg" alt="logo">
+				<h3>ChaboNorway<span>AS</span></h3>
+				<p class="footer-links">
+					<a href="#">Hjem</a>
+					<a href="#">Om oss</a>
+					<a href="#">Service</a>
+					<a href="#">Kontakt oss</a>
+				</p>
+				<p class="footer-company-name">© 2019 ChaboNorway AS el-motor solutions Pvt. Ltd.</p>
+			</div>
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>
+						 Agnes Mowinckels gate No.A1, Sector - 1</span>
+						Norge, Bergen - 5054</p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+4747000000</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@eduonix.com">chabonorwayas@chabo.no</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>Om oss</span>
+					ChaboNorwayAS vision is to eliminate boating emissions which is a strong guideline and gives us the direction and dedication to lift boating to a whole new level. </p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+<!--Chatbot-->
+	<button class="open-button" onclick="openForm()">Chat med oss</button>
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" id="msg" required></textarea>
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+	<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body>
+</html>
